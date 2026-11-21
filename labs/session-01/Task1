@@ -1,0 +1,20 @@
+KAYFA ACADEMY — AGENTIC AI DIPLOMA
+Session 01 — Welcome to Agentic AI: Concepts, Use Cases & Your First Agent
+==============================================================================
+
+WEEKLY PRACTICAL TASK 1 — RUN & PERSONALIZE YOUR FIRST AGENT
+===============================================================
+
+Task 1 — Run & personalize your first agent (Difficulty: Beginner)
+------------------------------------------------------------------
+Context. You've seen one sentence of system prompt turn the same model into a pirate, a banker and a
+support agent. Now make the agent yours: give it a purpose that is useful to you or to someone you know
+(a travel helper, a study assistant, a recipe coach, a gym buddy…).
+
+Requirements
+
+[ ] Your Python environment works: a virtual environment, packages installed, and the key in .env (never in the code). The starter agent runs.
+[ ] A new personality and purpose, set through the system prompt. The prompt states the role, the tone and at least one boundary (something the agent must not do).
+[ ] One small improvement: a welcome message, a message counter, or a polite goodbye on exit.
+[ ] The chat still ends cleanly on exit / quit.
+

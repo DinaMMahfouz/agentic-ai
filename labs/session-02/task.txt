@@ -1,0 +1,50 @@
+KAYFA ACADEMY — AGENTIC AI DIPLOMA
+Session 02 — Building Your First Real Agent
+==============================================================================
+
+4. WEEKLY PRACTICAL TASK 2 — BUILD YOUR OWN CONVERSATIONAL AGENT
+================================================================
+
+Task 2 — Build your own conversational agent (Difficulty: Beginner)
+-------------------------------------------------------------------
+Context. Today you built one skeleton that powers four agents. Now build your own agent for a
+use case you care about. It's the first version of the agent you will grow all diploma long: next
+week you harden it, then you give it a schema (Session 4) and tools (Session 5).
+
+Requirements
+
+[ ] Choose a use case from Session 1's landscape (or propose your own) and give your agent a name.
+[ ] Write a system prompt with a role, audience & tone, scope, at least two boundaries and a fallback.
+[ ] Memory across turns using message_history and result.all_messages().
+[ ] A graceful exit (exit / quit with a goodbye) and no API call on empty input.
+[ ] try/except around the model call with a friendly message for API and network errors.
+[ ] The API key is loaded from .env with load_dotenv(); .env is in .gitignore.
+[ ] Bonus: a second agent with a clearly different personality; ask both the same 3 questions and compare.
+
+Deliverables
+
+- Your code (.py files) and a .env.example. Never submit your real .env.
+- A transcript (text file or screenshot) of at least 5 turns that proves memory: the agent uses a detail you gave 2+ turns earlier.
+- A 3-line note: the use case, who the user is, and one boundary you tested.
+
+Due: before Session 3.
+
+Grading rubric
+--------------
+
+| Criterion | Points | What earns full marks |
+|---|---|---|
+| It works | 4 | Runs end to end; holds a 5+ turn conversation; the transcript clearly shows memory |
+| Requirements met | 3 | Purposeful system prompt (role, scope, 2+ boundaries, fallback) · graceful exit + empty-input check · try/except for API errors |
+| Code quality | 2 | Clear names, short comments where useful, key loaded from .env, no secret anywhere in code or screenshots |
+| Submission complete | 1 | Code + memory transcript + 3-line note (+ .env.example) |
+| Total | 10 | |
+
+Hints
+-----
+
+- Start by copying support_agent.py and changing only the system prompt. Get that running before you add anything.
+- To prove memory, tell the agent a fact in turn 1 ("I'm vegetarian", "my exam is on Sunday") and rely on it in turn 3 or 4.
+- If memory doesn't work, look at where history = [] is. It must be above the while loop.
+- Write the system prompt as 4–6 short sentences: role, audience, scope, boundaries, fallback. Then test one boundary on purpose.
+- Use /history to see exactly what your agent will send next turn.
